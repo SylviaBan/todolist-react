@@ -11,8 +11,6 @@ export default function TodoList() {
                 <Link to="/completed" className="btn btn-outline-dark bg-light"><FaCheckSquare/></Link>
                 {/* Add task*/}
                 <Link to="/add-task" className="btn btn-outline-dark bg-light"><FaPlusSquare/></Link>
-                {/* Search*/}
-                <Link to="/search" className="btn btn-outline-dark bg-light"><FaSearch/></Link>
             </div>
             <button className="btn btn-outline-dark bg-light"><FaTrash/></button>
         </footer>
