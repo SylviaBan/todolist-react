@@ -1,9 +1,8 @@
-import logo from '../logo.svg';
 import '../App.css';
 import TodoList from "./TodoList";
 import NavBar from "./NavBar";
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Router, Route } from 'react-router-dom';
+import { Routes, Route, useParams } from 'react-router-dom';
 import AddTask from "./AddTask";
 
 function App() {
@@ -13,10 +12,11 @@ function App() {
         <main>
             <TodoList />
             <NavBar />
-            <Router>
+            <Routes>
                 <Route path="/add-task" component={AddTask} />
-                <Route path="/" exact component={TodoList} />
-            </Router>
+                <Route path="/" component={TodoList} />
+                <Route path="/:search?" component={TodoList} />
+            </Routes>
         </main>
     </div>
   );

@@ -1,4 +1,10 @@
+import { useParams } from 'react-router-dom';
+
 export default function TodoList() {
+
+    const { search } = useParams();
+    const tasks = [];
+
     return (
         <section id="todo">
             <h1 className="m-3">Liste de tâches</h1>
