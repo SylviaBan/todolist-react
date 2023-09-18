@@ -7,10 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-main {
-  background-color: firebrick;
-}
-
 footer {
   background-color: rosybrown;
 }
@@ -18,14 +14,4 @@ footer {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-list-group-item {
-  display: flex;
-  background-color: goldenrod;
-}
-
-.task {
-  display: flex;
-  justify-content: space-around;
 }

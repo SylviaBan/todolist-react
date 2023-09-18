@@ -34,18 +34,11 @@ export default function TodoList() {
             <ul className="list-group m-5">
                 {/*affichage via une boucle - filtrage par tâche complétée ou non*/}
                 {filteredTasks.map(t => (
-                    <li className="list-group-item d-flex align-items-center bg-light">
+                    <li className="list-group-item">
                         {/*<Task key={t.id} task={t} />*/}
                         <Task task={t} />
-                        <button className="btn btn-sm ms-auto btn-outline-success">&#x2714;</button>
                     </li>)
                 )}
-
-                {/*affichage en dur*/}
-                <li className="list-group-item d-flex align-items-center bg-light">
-                    Ma nouvelle tâche
-                    <button className="btn btn-sm ms-auto btn-outline-success">&#x2714;</button>
-                </li>
             </ul>
         </section>
         </body>
