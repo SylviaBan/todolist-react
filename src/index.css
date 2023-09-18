@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  background-color: wheat;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -9,7 +8,7 @@ body {
 }
 
 main {
-  background-color: wheat;
+  background-color: firebrick;
 }
 
 footer {
@@ -19,4 +18,14 @@ footer {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+list-group-item {
+  display: flex;
+  background-color: goldenrod;
+}
+
+.task {
+  display: flex;
+  justify-content: space-around;
 }
